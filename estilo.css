@@ -215,7 +215,7 @@ body {
 
 /* Estilos para el contenedor final con fondo de imagen */
 .contenedor-final {
-  background-image: url('IMG/fondo17.jpg');
+  background-image: url('img/fondo17.jpg');
   background-size: cover;
   background-position: center;
   padding: 20px;
