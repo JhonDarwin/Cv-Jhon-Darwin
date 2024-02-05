@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.fondo-seccion {
+  height: 50vh; /* La mitad de la altura de la ventana */
+  background-image: url('img/fondo7.jpg'); /* Ajusta la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.texto-central h1 {
+  color: #ffffff; /* Color del texto */
+  font-size: 40px; /* Tamaño del texto */
+}
+
+.perfil-seccion {
+  text-align: center;
+  padding: 20px;
+}
+
+.marco-circulo {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #000000; /* Ajusta el color del marco */
+  width: 200px; /* Ajusta el tamaño del marco y la foto de perfil */
+  height: 200px;
+  margin-top: -130px; /* Ajusta el margen superior para posicionar más arriba */
+}
+
+.marco-circulo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; /* Para asegurar que la imagen ocupe todo el espacio del marco */
+}
+
+/* Estilos para las tres columnas */
+.tres-columnas {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilos generales para cada columna */
+.columna {
+  width: 30%; /* Ajusta el ancho de cada columna según sea necesario */
+  padding: 20px;
+  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto total */
+  margin-bottom: 20px;
+  color: #000000; /* Color del texto */
+}
+
+/* Estilos específicos para la columna de Perfil */
+.columna-perfil {
+  
+  border: 10px solid #000000; /* Color del borde de la columna */
+}
+
+/* Estilos específicos para la columna de Ubicación */
+.columna-ubicacion {
+  
+  border: 10px solid #000000; /* Color del borde de la columna */
+}
+
+/* Estilos específicos para la columna de Intereses */
+.columna-intereses {
+  
+  border: 10px solid #000000; /* Color del borde de la columna */
+}
+
+
+
+
+/* Estilos para la sección de Parallax */
+.parallax {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.parallax-image {
+  background-image: url('img/habilidades.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200vh; /* Doble de la altura de la ventana */
+  width: 100%;
+  transition: transform 0.3s ease-out;
+}
+
+
+/* Centrar el texto horizontalmente debajo de la animacion parallax */
+.titulo1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Tu Tipo de Letra', sans-serif;
+  color: #000000;
+  font-size: 36px;
+  margin-top: 0; /* Eliminar el margen superior predeterminado */
+  margin-bottom: 5px;
+  line-height: 1.2; /* Ajustar la altura de línea para mejorar el centrado vertical */
+}
+
+
+
+/* Estilos del menú en la parte superior derecha */
+.menu-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu-top ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-top li {
+  margin-left: 20px;
+}
+
+.menu-top a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+
+/* Estilos para las barras de animación de carga */
+.barra-container {
+  display: flex;
+  justify-content: space-around;
+  background-image: url('img/fondo3.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen al contenedor */
+  padding: 20px; /* Añadir espaciado alrededor del contenedor */
+  border: 5px solid #000000; /* Marco verde */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.columna1 {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.columna2 {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+}
+
+
+.barra-item {
+  margin-bottom: 20px;
+}
+
+.barra-animacion {
+  height: 20px;
+  width: 0;
+  background-color: #fa0000; /* Color inicial de la barra de progreso */
+  animation: crecer 10s linear infinite; /* Animación de crecimiento constante e infinita */
+}
+
+/* Animación personalizada de crecimiento */
+@keyframes crecer {
+  to {
+    width: var(--porcentaje);
+  }
+}
+
+
+/* Estilos para las cuatro columnas */
+
+.cuatro-columnas {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px; /* Añade un espacio arriba del bloque de columnas */
+}
+
+.columna3 {
+  width: 22%; /* Ajusta el ancho de cada columna según sea necesario */
+  padding: 20px;
+  color: #ffffff;
+
+}
+
+/* Estilos para el contenedor de las cuatro columnas con fondo de imagen y marco */
+.contenedor-cuatro-columnas {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 5px solid #000000; /* Borde negro */
+  margin-top: 10px;
+}
+
+
+
+/* Estilos para el contenedor final con fondo de imagen */
+.contenedor-final {
+  background-image: url('IMG/fondo17.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  text-align: center; /* Alineación del contenido al centro */
+}
+
+/* Estilos para el título de la sección final */
+.titulo-final {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* Estilos para las tres columnas en la sección final */
+.tres-columnas-final {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.columna-final {
+  width: 30%; /* Ajusta el ancho de cada columna según sea necesario */
+  padding: 20px;
+  color: #ffffff;
+}
+
+
+
