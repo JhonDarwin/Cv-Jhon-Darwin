@@ -1,43 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="estilo.css">
-  <title>Mi Página Web</title>
+
+  <title>CV Jhon Diaz</title>
 </head>
 <body>
-
   <!-- Sección con la imagen de fondo y el texto central -->
+  <section id="seccion-4"></section>
   <section class="fondo-seccion">
     <div class="texto-central">
-      <h1>JHON DARWIN </h1>
-      <h1>INGENIERO DE SISTEMAS E INFORMATICO</h1>
+      <h1 class="unico">JHON DARWIN DIAZ ROJAS</h1>
+
+      <h1 class="unico">INGENIERIA DE SISTEMAS E INFORMATICA</h1>
+
+      <h3 class="estudiante">Estudiante</h3>
       
     </div>
   </section>
-
+  <div class="column"></div>
     <!-- Sección con la foto de perfil y detalles personales -->
     <section class="perfil-seccion">
       <div class="marco-circulo">
         <img src="img/jhon.jpg" alt="Foto de Perfil">
       </div>
     </section>
-<!-- Sección con las tres columnas -->
-<section class="tres-columnas">
-  <div class="columna columna-perfil">
-    <h3>Perfil</h3>
-    <p>Estudiante de ingeniería de sistemas con habilidades emergentes en Desarrollo de Aplicaciones Móviles, desarrollo web, redes y telecomunicaciones, etc. Mi enfoque académico y proyectos prácticos demuestran mi compromiso con la resolución de problemas y la aplicación de soluciones tecnológicas. Busco oportunidades para aplicar y expandir mis conocimientos en un entorno profesional.</p>
-  </div>
-  <div class="columna columna-ubicacion">
-    <h3>Ubicación</h3>
-    <p>Resido actualmente en la ciudad de Huánuco. Estoy abierto a considerar oportunidades de trabajo en cualquier parte del Perú.</p>
-  </div>
-  <div class="columna columna-intereses">
-    <h3>Intereses</h3>
-    <p>Como estudiante en la etapa final de la carrera de ingeniería de sistemas, mis intereses se han desarrollado en áreas clave que reflejan mi compromiso con la disciplina. Me apasiona explorar y aplicar. Siempre estoy ansioso de aprender sobre las últimas tecnologías emergentes y busco oportunidades para contribuir al campo a través de un aprendizaje continuo y desarrollo profesional.</p>
-  </div>
-</section>
+<!-- Botones flotantes -->
+<div class="botones-flotantes">
+  <a href="https://www.linkedin.com/in/jhon-darwin-armando-diaz-rojas-896549252/" class="boton boton1">LINKEDIN</a>
+  <a href="https://web.whatsapp.com/" class="boton boton2">WHATSAPP</a>
+  <a href="https://github.com/JhonDarwin" class="boton boton3">GITHUB</a>
+</div>
 
 
 <section id="seccion-1">
@@ -53,15 +50,19 @@
    <!-- Menú en la parte superior derecha -->
    <nav class="menu-top">
     <ul>
+      <li><a href="#seccion-4">Inicio</a></li>
       <li><a href="#seccion-1">Acerca de Mi</a></li>
       <li><a href="#seccion-2">Habilidades</a></li>
       <li><a href="#seccion-3">Preparacion y Experiencia</a></li>
+      <li><a href="#seccion-5">Certificados y Proyectos</a></li>
+      
     </ul>
   </nav>
-
+  
   <section id="seccion-2">
-  <h1 class="titulo1">Habilidades</h1>
+    <h1 class="titulo1">Habilidades</h1>
   </section>
+  
   
 <!-- Sección con las barras de animación de carga -->
 <div class="barra-container">
@@ -152,9 +153,18 @@
   </section>
 </div>
 
-<!-- Contenido previo (título principal, cuatro columnas, etc.) -->
+<div class="container">
+  <div class="center-content">
+    <h2 class="title">CERTIFICADOS y PROYECTOS</h2>
+    <div class="image-container">
+      <a href="https://github.com/JhonDarwin"><img src="img/proyecto1.jpg" alt="Imagen 1" class="centered-image"></a>
+    </div>
+  </div>
+</div>
+
 
   <!-- Contenedor con fondo de imagen para la sección final -->
+  <section id="seccion-5"></section>
   <div class="contenedor-final">
     <!-- Título de la sección final -->
     <h2 class="titulo-final">PONTE EN CONTACTO AHORA MISMO! </h2>
@@ -176,6 +186,15 @@
         <h3>Página Web</h3>
         <p>JhonDarwin.com</p>
       </div>
+      <div class="container2">
+        <!-- Otro contenido de tu página aquí -->
+        <div class="cv-buttons">
+          <button onclick="descargarCV()">Ver y Descargar CV</button>
+          
+        </div>
+      </div>
+
+
     </section>
   </div>
 

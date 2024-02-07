@@ -1,6 +1,23 @@
+.column {
+  width: 100%;
+  background-color: blue;
+}
+
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+    background-color: red;
+  }
+}
 body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-family: 'Calibri', sans-serif;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 24px;
+  }
 }
 
 .fondo-seccion {
@@ -15,7 +32,7 @@ body {
 }
 
 .texto-central h1 {
-  color: #ffffff; /* Color del texto */
+  color: #000000; /* Color del texto */
   font-size: 40px; /* Tamaño del texto */
 }
 
@@ -119,29 +136,38 @@ body {
 
 /* Estilos del menú en la parte superior derecha */
 .menu-top {
-  position: absolute;
-  top: 20px;
+  position: fixed; /* Mantener el menú en la misma posición mientras se desplaza la página */
+  top: 0; /* Anclar el menú en la parte superior */
   right: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para que el texto sea legible */
+  padding: 10px; /* Espacio alrededor del contenido del menú */
+  z-index: 1000; /* Asegurarse de que el menú esté sobre otros elementos */
+  transition: top 0.3s ease; /* Efecto de transición suave */
 }
 
 .menu-top ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 .menu-top li {
+  display: inline-block;
   margin-left: 20px;
 }
 
 .menu-top a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000;
   font-weight: bold;
   font-size: 16px;
   transition: color 0.3s ease;
 }
+
+.menu-top a:hover {
+  color: #888;
+}
+
 
 
 /* Estilos para las barras de animación de carga */
@@ -244,4 +270,105 @@ body {
 }
 
 
+.contenedor-titulo-imagen {
+  text-align: center;
+}
 
+.titulo-centrado {
+  color: #000000;
+  font-size: 24px;
+}
+
+.imagen-movimiento {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 200px; /* Ancho del contenedor */
+  height: 200px; /* Altura del contenedor */
+}
+
+.imagen-mediana {
+  width: 100%; /* Ancho de la imagen */
+  height: auto; /* Altura automática */
+}
+.centered-image {
+  width: 500px; /* Ancho deseado de la imagen */
+  height: 300px; /* Altura deseada de la imagen */
+  display: block;
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
+  object-fit: cover; /* Escalar la imagen para que llene el contenedor sin distorsionarla */
+}
+.center-content {
+  text-align: center; /* Centrar el texto dentro del contenedor */
+}
+
+/* botone de ver y descargar cv */
+
+.cv-buttons {
+  text-align: center;
+  margin-top: 20px; /* Espacio entre los botones y el contenido */
+}
+
+.cv-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px; /* Espacio entre los botones */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* botones flotantes */
+.botones-flotantes {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.boton {
+  display: block;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.boton1 {
+  background-color: #007bff; /* Color para el botón 1 */
+}
+
+.boton2 {
+  background-color: #28a745; /* Color para el botón 2 */
+}
+
+.boton3 {
+  background-color: #dc3545; /* Color para el botón 3 */
+}
+
+.boton:hover {
+  opacity: 0.8; /* Cambia la opacidad al pasar el ratón por encima */
+}
+
+
+
+.estudiante {
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+  color: #000000; /* Color rojo para el texto */
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  text-shadow: 1px 1px 2px #000000; /* Sombra de texto */
+}
+
+.unico {
+  font-size: 24px; /* Tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+  color: #0000ff; /* Color azul para el texto */
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  text-shadow: 1px 1px 2px #000000; /* Sombra de texto */
+}
