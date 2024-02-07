@@ -59,7 +59,8 @@ body {
 }
 
 /* Estilos para las tres columnas */
-.tres-columnas {
+/* Estilos para las tres columnas */
+.tres-columnasn {
   display: flex;
   justify-content: space-around;
 }
@@ -73,23 +74,22 @@ body {
   color: #000000; /* Color del texto */
 }
 
-/* Estilos específicos para la columna de Perfil */
-.columna-perfil {
-  
+/* Estilos específicos para la columna de Información */
+.columna-info {
   border: 10px solid #000000; /* Color del borde de la columna */
 }
 
-/* Estilos específicos para la columna de Ubicación */
-.columna-ubicacion {
-  
+/* Estilos específicos para la columna de Contacto */
+.columna-contacto {
   border: 10px solid #000000; /* Color del borde de la columna */
 }
 
-/* Estilos específicos para la columna de Intereses */
-.columna-intereses {
-  
+/* Estilos específicos para la columna de Habilidades */
+.columna-habilidades {
   border: 10px solid #000000; /* Color del borde de la columna */
 }
+
+
 
 
 
