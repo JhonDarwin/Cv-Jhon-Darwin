@@ -40,7 +40,7 @@ setInterval(cambiarImagen, 3000);
 
 function descargarCV() {
   // Reemplaza 'ruta-al-cv.pdf' con la ruta de tu archivo CV en formato PDF
-  window.open('https://docs.google.com/document/d/1HflEVZPx4z4Y82wzIU4f7HpRW0FGW-04/edit?usp=drive_link&ouid=111835458615396456786&rtpof=true&sd=true', '_blank');
+  window.open('https://drive.google.com/file/d/1uWVx0TW-dHii-f7AuWWziayOyj_Sa6KF/view?usp=sharing', '_blank');
 }
 
 function imprimirCV() {
